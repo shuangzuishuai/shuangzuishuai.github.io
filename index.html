@@ -235,3 +235,106 @@
         }
     }
 </style>
+<style>
+    .features-section {
+        padding: 50px 20px;
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        margin-top: 40px;
+    }
+
+    .features-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .features-title {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-item h3 {
+        color: #4a9eff;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .feature-item p {
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    .price-section {
+        background: rgba(74, 158, 255, 0.2);
+        padding: 30px;
+        border-radius: 15px;
+        margin-top: 40px;
+        backdrop-filter: blur(10px);
+    }
+
+    .price-title {
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .price-amount {
+        font-size: 48px;
+        color: #4a9eff;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+</style>
+
+<div class="features-section">
+    <div class="features-container">
+        <h2 class="features-title">Cold OS 系统特点</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>极致性能</h3>
+                <p>采用最新优化技术，系统运行流畅，启动速度快，响应迅速。</p>
+            </div>
+            <div class="feature-item">
+                <h3>安全防护</h3>
+                <p>内置多重安全机制，全方位保护用户数据和隐私安全。</p>
+            </div>
+            <div class="feature-item">
+                <h3>智能优化</h3>
+                <p>自动调节系统资源，提供最佳性能表现和用户体验。</p>
+            </div>
+            <div class="feature-item">
+                <h3>定制化界面</h3>
+                <p>提供丰富的个性化选项，打造专属的操作系统体验。</p>
+            </div>
+        </div>
+
+        <div class="price-section">
+            <h2 class="price-title">Cold OS 授权价格</h2>
+            <div class="price-amount">￥3,999</div>
+            <p>包含终身技术支持和系统更新服务</p>
+        </div>
+    </div>
+</div>
