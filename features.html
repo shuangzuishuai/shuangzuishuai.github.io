@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold OS Features</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .features {
+            padding: 80px 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #4a9eff;
+        }
+
+        .feature-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="features">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">Cold OS特点</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>高性能</h3>
+                    <p>Cold OS采用优化的内核架构，最大限度减少系统开销，提供卓越的性能表现和响应速度。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>安全可靠</h3>
+                    <p>内置先进的安全机制，提供全方位的系统防护，保护用户数据和隐私安全。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>轻量级设计</h3>
+                    <p>精简系统组件，占用资源少，适合各种硬件配置，启动速度快。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>用户友好</h3>
+                    <p>直观的操作界面，简单易用，降低学习门槛，提供流畅的用户体验。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>高度定制</h3>
+                    <p>提供丰富的个性化选项，用户可以根据需求自由配置系统外观和功能。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>兼容性强</h3>
+                    <p>支持广泛的软件生态系统，确保用户可以轻松运行各类应用程序。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<style>
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: #4a9eff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+        background-color: #3580d8;
+    }
+</style>
+
+<button class="back-button" onclick="window.location.href='cold os.html'">返回主页</button>
+<script>
+    // 修改返回按钮的链接
+    document.querySelector('.back-button').onclick = function() {
+        window.location.href = 'index.html';
+    };
+</script>
