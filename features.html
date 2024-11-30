@@ -119,3 +119,41 @@
         window.location.href = 'index.html';
     };
 </script>
+<style>
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 12px 25px;
+        background: linear-gradient(135deg, #4a9eff, #3580d8);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(74, 158, 255, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .back-button:before {
+        content: "←";
+        font-size: 18px;
+    }
+
+    .back-button:hover {
+        background: linear-gradient(135deg, #3580d8, #4a9eff);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(74, 158, 255, 0.4);
+    }
+
+    .back-button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 10px rgba(74, 158, 255, 0.3);
+    }
+</style>
